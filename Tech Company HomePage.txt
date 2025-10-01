@@ -1,0 +1,73 @@
+1. Global Structure and Branding
+This content should be consistent across all pages.
+Document Basics & Metadata:
+Create a clear, concise page title for each page (e.g., "TechCo - Innovations," "TechCo - Contact").
+Design and link a small Favicon (like a company logo icon).
+
+Headers & Footers:
+Header: Include the main company logo (using an image) and the primary navigation menu. Use a large, bold heading for the company name or motto.
+
+Footer: Include copyright information for the company (<hr> may be used to separate it from the main content). Include a list of essential links (e.g., Privacy Policy, Terms of Service, Careers).
+
+Background/Aesthetics:
+Implement an inline CSS style on the main body element to set a background image (like a subtle texture or pattern) with full coverage, or just a background color.
+
+2. Navigation and Layout
+Navigation (<nav>):
+Create an unordered list of the main site pages: Home, Products, About Us, Careers, Contact. Each list item should be an internal hyperlink.
+Implement inline CSS to style the list items, perhaps making them display horizontally (like a menu bar) and changing the font to bold.
+
+Containers (<div> and <span>):
+Every major section (Hero, Features, Testimonials) should be wrapped in a separate block-level container for easy visual separation.
+Use inline containers to apply specific styling (like a different color) to a few words within a paragraph, such as highlighting a product name.
+
+3. Home Page Content
+Hero Section:
+Use a large <h1> for the company's main motto.
+Include a prominent product image with descriptive alt text.
+Use a <button> wrapped in an <a> tag to link to the main Products page (a prominent "View Products" button).
+
+Features Section:
+Use <h2> headings for each product feature.
+Detail the features using an unordered list.
+Use text formatting tags (e.g., bold for key concepts, italic for explanations).
+
+Testimonial Section:
+Feature customer feedback using the <blockquote> tag to clearly set them apart. Include the customer's name using <small> text.
+
+4. Products Page Content
+Product Listings:
+For each product, use a medium heading (<h3> or <h4>).
+Display product information using a Description List (<dl>, <dt>, <dd>) to clearly define terms (e.g., Model Name, Release Date, Price).
+Specifications Comparison:
+Create a detailed <table> to compare the current product generation versus the previous one.
+Use <th> for column and row headings (e.g., Feature, Gen 1, Gen 2).
+Use <td> for the data points. Include border and width attributes for initial styling.
+
+Media Gallery:
+Use the <figure> and <figcaption> tags to display a primary image of the product along with a title.
+Embed a video of the product in action. Use the <video> tag with multiple <source> tags (e.g., MP4 and WEBM) as a file type backup.
+
+5. Contact Page Content
+Contact Form:
+Design a complete <form> for user inquiries.
+Group the fields logically using <fieldset> and a <legend> (e.g., "Your Details" and "Inquiry Details").
+
+Required Inputs:
+Name, Email: Use type="text" and type="email" with the required attribute.
+Phone Number: Use type="tel" with a specific pattern and a placeholder (to guide the user on the required format).
+Inquiry Type: Use a <select> dropdown menu with multiple <option> tags for common categories (e.g., "Sales," "Support," "Partnership").
+Message: Use a multi-line <textarea> with set rows and cols.
+Submission: Include <input type="submit"> and <input type="reset"> buttons.
+
+6. Careers Page or Tech Blog Content
+Job Application Form (using File Uploads):
+Create a simple form that requires a resume upload. Ensure the form uses the correct enctype and the file input uses the accept attribute to limit files to PDF and DOCX.
+
+Code Example/Documentation:
+Use the <pre> tag to display a block of sample code or a configuration file, preserving its spacing and formatting.
+
+Interactive Element (JS Practice):
+Create a dedicated section where you can practice your JavaScript integration. For example, a "System Status" box.
+Include a button with an onClick="functionName()" attribute.
+Write a small JavaScript function inside <script> tags that modifies the text content of a paragraph using document.getElementById().innerHTML when the button is clicked
