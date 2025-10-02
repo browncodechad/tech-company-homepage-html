@@ -11,18 +11,105 @@
         <header>
             <h1 align="center">TECH</h1>
             <img src="Media/logo.jpeg" alt="logo" width="150"><br>
-            <a href="HomePage.html" target="_blank" title="Home">Home</a>
-            <a href="AboutUs.html" target="_blank" title="About Us">About Us</a>
-            <a href="ProductsPage.html" target="_blank" title="Products">Products</a>
-            <a href="CareerPage.html" target="_blank" title="Careers">Career</a>
-            <a href="ContactUsPage.html" target="_blank" title="Contact Us">Contact Us</a>
+            <nav>
+            <ul style="display:inline-block;">
+            <a href="HomePage.html" target="_blank" title="Home"><b>Home</b></a>
+            <a href="AboutUs.html" target="_blank" title="About Us"><b>About Us</b></a>
+            <a href="ProductsPage.html" target="_blank" title="Products"><b>Products</b></a>
+            <a href="CareerPage.html" target="_blank" title="Careers"><b>Careers</b></a>
+            <a href="ContactUsPage.html" target="_blank" title="Contact Us"><b>Contact Us</b></a>
+            </ul>
+            </nav>
             <hr>
         </header>
         <main>
-
+            <div class="hero" style="position: relative;
+                                    height:70vh;
+                                    overflow:hidden;">
+                <video autoplay muted loop style="position: absolute;
+                                                            top:70%;
+                                                            left:70%;
+                                                            min-width:100%;
+                                                            min-height:100%;
+                                                            transform: translate(-50%, -50%);
+                                                            z-index: -1;">
+                    <source src="Media/bg.mp4" type="video/mp4">
+                    <source src="Media/bg.webm" type="video/webm">
+                </video>
+                <div class="overlay-content" style="position: relative; z-index: 1;">
+                    <h1 style="color: white">Pacing towards the Far Future</h1>
+                    <button style="background-color:white; color:black; font-size:25px;"><a href="ProductsPage.html">View Products Now</a></button>
+                </div>
+            </div>
+            <div class="features" align="center">
+                <h2 align="center">Highlighted Product</h2>
+                <figure align="center">
+                    <img src="Media/ultra15.jpg">
+                    <figcaption>Ultra 15</figcaption>
+                </figure>
+                <p>We're proud to announce that our newest release, the ultra 15 has been a massive success! With over 70 Million units sold in the span of 6 months, this breaks the records for the most sales in half a year for any mobile device. Not just in our own brand history, but across the globe, no one has been able to achieve what we achieved! It also won the award for the Phone of the year 2025, truly remarkable. Here's some of its features compared to the previous Ultra 14:</p>
+                <table align="center" style="background-color: black; color:black; border:2px solid; border-color: black;">
+                    <tr style="background-color: rgb(39, 140, 255)" align="center">
+                        <th width="70">Model</th>
+                        <th width="80">Processor</th>
+                        <th width="80">Battery</th>
+                        <th width="80">RAM</th>
+                        <th width="80">ROM</th>
+                        <th width="80">Cameras</th>
+                        <th width="80">Price</th>
+                    </tr>
+                    <tr style="background-color:white;" align="center">
+                        <td>Ultra 14</td>
+                        <td>F14</td>
+                        <td>4000 mAh (Lasts 1 day)</td>
+                        <td>6 GB/8 GB</td>
+                        <td>128 GB/256 GB</td>
+                        <td>48 MP Rear, 12 MP Front</td>
+                        <td>$399.99</td>
+                    </tr>
+                    <tr style="background-color: white;" align="center">
+                        <td>Ultra 15</td>
+                        <td>F16 Pro</td>
+                        <td>5500 mAh (Lasts 2 1/2 days!)</td>
+                        <td>12 GB/16 GB/24 GB</td>
+                        <td>512 GB OR 1 TB/2 TB</td>
+                        <td>64 MP + 5 MP rear, 32 MP Front</td>
+                        <td>$599.99</td>
+                    </tr>
+                </table>
+                <p>As you can clearly see, with just a $200 increase in price, you're getting double the RAM, double the storage, a processor that's 2 generations ahead of the one featured in the F14, a wayyyyyyyyyy better camera, twice the battery timings and a whole lot <a href="ultra15.html" target="_blank" title="Ultra 15">more.</a></p>
+                <button style="background-color: white; color:black; font-size:15px; border:2px solid; border-radius:15px;"><a href=".html">Buy Now!</a></button> <!-- Have to center this -->            
+            </div>
+            <div class="testimonials">
+                <p>Here's what some users say about it:</p>
+                <fieldset style="width: 231px; display:inline-block;">
+                    <legend><small>Sonia</small></legend>
+                    <p>This is the best piece of technology I've ever laid my hands on. I used to hate their products before I bought the Ultra 15 but now after spending 3 months using it, I can say that it's my best decision ever! I absolutely love their company now and I'm gonna keep buying their latest releases.</p>
+                </fieldset>
+                <fieldset style="width: 231px; display:inline-block;">
+                    <legend><small>Henry</small></legend>
+                    <p>Such a lovely smartphone, it's everything you want and need, nothing you don't. Flawless.</p>
+                </fieldset>
+                <fieldset style="width: 231px; display: inline-block;">
+                    <legend><small>Thomas</small></legend>
+                    <p>I cant believe how they came up with this device. It seems like something straight from the heavens. All these cool features in such a beautiful looking phone, which is also fairly priced? It's the deal of a lifetime!</p>
+                </fieldset>
+                <fieldset style="width: 231px; display: inline-block;">
+                    <legend><small>Carlos</small></legend>
+                    <p>I always trusted them since the day I came to know of their Motto, a company that is focused on user-experience, innovation and creativity rather than money can never fail. And they proved me right, I now go around flexing my Ultra 15 to the people who didn't believe me haha</p>
+                </fieldset>
+                <fieldset style="width: 231px; display: inline-block;">
+                    <legend><small>Benjamin</small></legend>
+                    <p>It's mindblowing what they've created here, everytime I pick it up it's such a pleasant experience to hold it, and even more fun to use it considering it is blazingly fast and super optimised to deliver premium user experience in a budget price. I31 in love with it.</p>
+                </fieldset>
+            </div>                                    
         </main>
         <footer>
-
+            <hr>
+            <a href="PrivacyPolicy.html" target="_blank" title="Privacy Policy">Privacy Policy</a><br>
+            <a href="TermOfService.html">Terms of Service</a><br>
+            <a href="CareerPage.html" target="_blank" title="Careers">Careers</a><br>
+            &copy; Tech<sup>TM</sup>
         </footer>
     </body>
 </html>
