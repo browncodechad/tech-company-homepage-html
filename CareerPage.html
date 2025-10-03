@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
     <head>
-        <title>Careerss</title>
+        <title>Careers</title>
         <link rel="icon" href="Media/icon.ico" type="image/x-icon">
     </head>
     <body>
-        <header>
-
+        <header align="center">
+            <h1>Join our workforce!</h1>
+            <hr>
         </header>
         <main>
-
+            <form align="center" action="index.php" method="POST" enctype="Multipart/form-data">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email" required><br>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="password" minlength="8" required><br>
+                <label for="num">Phone No:</label>
+                <input type="tel" id="num" name="phone_no" placeholder="03XX-XXXXXXX" pattern="[0-9]{4}-[0-9]{7}" required><br>
+                <label for="dep">Which department do you want to apply in?:</label>
+                <select id="dep" name="applied_dep" required>
+                    <option value="" disabled selected></option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Human Resources">Human Resources</option>
+                    <option value="Product Development">Product Development</option>
+                    <option value="CyberSecurity">CyberSecurity</option>
+                    <option value="Software Engineering">Software Engineering</option>
+                </select><br>
+                <label for="resume">Upload your resume:</label>
+                <input type="file" accept=".jpg, .pdf, .doc, .docx, .jpeg, .png," id="resume" name="resume" required><br>
+                <input type="submit"> <input type="reset">
+            </form>
         </main>
         <footer>
-            
+            <hr>
+            &copy; Tech<sup>TM</sup>            
         </footer>
     </body>
 </html>

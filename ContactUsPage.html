@@ -9,25 +9,33 @@
             <h1>Contact Us</h1>
         </header>
         <main>
-            <fieldset style="width: 260px;">
+            <fieldset align="center"> <!-- I have to align this entire field in the center of the page and also reduce its width to 250, but somehow only EITHER of them works. -->
                 <legend align="center">Contact Form</legend>
-            <form>
+            <form action="index.php" method="POST">
                 <label for="name">What is your name?:</label>
-                <input type="text" id="name" name="user_name" required><br>
+                <input type="text" id="name" name="user_name" required><br><br>
                 <label for="email">What is your email?:</label>
-                <input type="email" id="email" name="user_email" required><br>
+                <input type="email" id="email" name="user_email" required><br><br>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="password" minlength="8" required><br><br>
                 <label for="reason">What's the reason you're contacting us?:</label>
                 <select id="reason" name="reason_of_contact" required>
                     <option value="" disabled selected></option>
                     <option value="Query">Query</option>
                     <option value="Complaint">Complaint</option>
                     <option value="Suggestion">Suggestion</option>
-                </select>
+                    <option value="Partnership">Partnership</option>
+                    <option value="Support">Support</option>
+                </select><br><br>
+                <label for="details">Tell us what you have to say:</label>
+                <textarea id="details" name="details" required></textarea><br>
+                <input type="submit"> <input type="reset">
             </form>
             </fieldset>
         </main>
         <footer>
-            
+            <hr>
+            &copy; Tech<sup>TM</sup>            
         </footer>
     </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buy Now</title>
+        <link rel="icon" href="Media/icon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header align="center">
+            <h1>Thank you for buying our products!</h1>
+            <hr>
+        </header>
+        <main>
+            <form align="center">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email" required><br>
+                <label for="prod">Select your product:</label>
+                <select id="prod" required>
+                    <option value="" disabled selected></option>
+                    <option value="AirBuds">AirBuds</option>
+                    <option value="Ultra 15">Ultra 15</option>
+                    <option value="XTab">XTab</option>
+                    <option value="WorkBook 17">WorkBook 17</option>
+                </select><br>
+                <label for="qty">Enter the quantity:</label>
+                <input type="number" id="qty" name="prod_qty" min="0" required><br>
+                <label>Select a method to pay:</label>
+                <select>
+                    <option value="" disabled selected></option>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="JazzCash">JazzCash</option>
+                    <option value="EasyPaisa">EasyPaisa</option>
+                </select><br>
+                <input type="submit" value="Pay"> <input type="reset">
+            </form>
+        </main>
+        <footer>
+            <hr>
+            &copy; Tech<sup>TM</sup>
+        </footer>
+    </body>
+</html>
