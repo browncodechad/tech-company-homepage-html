@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Privacy Policy</title>
         <link rel="icon" href="Media/icon.ico" type="image/x-icon">
@@ -8,7 +8,7 @@
         <header align="center">
             <h1>Privacy Policy</h1>
         </header>
-        <main>
+        <main id="policy">
             <h3>Our Core Privacy Commitment</h3>
             <p>At Tech, privacy is one of our top most priorities for our users' experience. We build our products with your pleasure and satisfaction in mind, and keeping your data secure is part of keeping you happy with us and for you to keep trusting us.</p>
             <h3>Information we collect</h3>
@@ -28,12 +28,18 @@
                 <li>opt out of the data collection policy</li>
                 <li>turn off the cookies in your browser</li>
             </ul>
+            <button onClick="agree()">Agree</button>
+            <script>
+                function agree(){
+                    document.getElementById("policy").innerHTML= "Thanks for agreeing with our policy!";
+                }                
+            </script>
             <br><hr>
-            <h2>Contacts</h2>
-            <p>For any further queries, contact us <a href="ContactUsPage.html" title="Contact Us" target="_blank">here</a>.</p>
         </main>
         <footer>
-            
+            <h2>Contacts</h2>
+            <p>For any further queries, contact us <a href="ContactUsPage.html" title="Contact Us" target="_blank">here</a>.</p>
+            &copy; Tech<sup>TM</sup>            
         </footer>
     </body>
 </html>

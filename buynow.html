@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Buy Now</title>
         <link rel="icon" href="Media/icon.ico" type="image/x-icon">
@@ -16,7 +16,7 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="user_email" required><br>
                 <label for="prod">Select your product:</label>
-                <select id="prod" required>
+                <select id="prod" name="selected_product" required>
                     <option value="" disabled selected></option>
                     <option value="AirBuds">AirBuds</option>
                     <option value="Ultra 15">Ultra 15</option>
@@ -25,8 +25,8 @@
                 </select><br>
                 <label for="qty">Enter the quantity:</label>
                 <input type="number" id="qty" name="prod_qty" min="0" required><br>
-                <label>Select a method to pay:</label>
-                <select>
+                <label for="method">Select a method to pay:</label>
+                <select id="method" name="payment_method" required>
                     <option value="" disabled selected></option>
                     <option value="Visa">Visa</option>
                     <option value="MasterCard">MasterCard</option>
